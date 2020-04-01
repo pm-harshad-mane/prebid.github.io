@@ -104,7 +104,7 @@ The PubMatic adapter supports video as of Prebid 1.16.0
 | Name 					 | Scope    | Description        										  | Example |
 | :----------------------| :------- | :---------------------------------------------------------- | :------ |
 | `video.mimes` 		 | required | Video MIME types 											  | `['video/mp4','video/x-flv']` |
-| `video.skippable` 	 | optional | If 'true', user can skip ad 								  | `true` |
+| `video.skip` 	 | optional | If '1', user can skip ad 								  | `1` |
 | `video.minduration` 	 | optional | Minimum ad duration in seconds							  | `5` |
 | `video.maxduration`  	 | optional | Maximum ad duration in seconds 							  | `30` |
 | `video.startdelay` 	 | optional | Start delay in seconds for pre-roll, mid-roll, or post-roll ad placements | `5` |
@@ -135,7 +135,7 @@ var videoAdUnits = [
         adSlot: '38519891@300x250',              // required
         video: {
           mimes: ['video/mp4','video/x-flv'],   // required
-          skippable: true,                      // optional
+          skip: 1,                              // optional
           minduration: 5,                       // optional
           maxduration: 30,                      // optional
           startdelay: 5,                        // optional
